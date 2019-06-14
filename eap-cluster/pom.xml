@@ -31,7 +31,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>hademo</finalName>
+        <finalName>SampleApp</finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -40,18 +40,9 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		  <warName>hademo</warName>
+              		  <warName>ROOT</warName>
                 </configuration>
             </plugin>
-            			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-ejb-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<ejbVersion>3.1</ejbVersion>
-					<generateClient>true</generateClient>
-				</configuration>
-			</plugin>
         </plugins>
       </build>
     </profile>
