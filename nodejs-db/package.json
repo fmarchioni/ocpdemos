@@ -9,7 +9,7 @@
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "mocha": "^2.4.5",
-    "mongodb": "^2.1.16",
+    "mongodb": "^3.6.1",
     "morgan": "^1.7.0",
     "mysql": "^2.5.4",
     "object-assign":"4.1.0"
