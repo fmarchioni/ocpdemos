@@ -11,7 +11,8 @@
 		
 		//Getting the runtime reference from system
 		Runtime runtime = Runtime.getRuntime();
-		
+		com.sun.management.OperatingSystemMXBean osBean = java.lang.management.ManagementFactory.getPlatformMXBean(
+                com.sun.management.OperatingSystemMXBean.class);
  
              %>
               
@@ -21,6 +22,15 @@
                     <br/>
                     <h3>
                         <%="Max Memory:" + runtime.maxMemory() / mb %>
+                    </h3>
+                    <h3>
+                        <%="Num Processors:" + runtime.availableProcessors() %>
+                    </h3>
+                    <h3>
+                        <%="getProcessCpuLoad:" + sBean.getProcessCpuLoad() %>
+                    </h3>
+                    <h3>
+                        <%="getSystemCpuLoad:" + osBean.getSystemCpuLoad() %>
                     </h3>
               
                
